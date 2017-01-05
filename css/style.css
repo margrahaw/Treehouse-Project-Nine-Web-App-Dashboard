@@ -1,0 +1,141 @@
+/* Global Layout Set-Up */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Nunito Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* -------------------------------
+	Main Styles
+--------------------------------- */
+
+/* -- Header -- */
+.banner {
+	height: 50px;
+	border-bottom: 3px solid #fff;
+}
+.banner,
+.banner-icons {
+	display: flex;
+	justify-content: space-between;
+	background-color: #7477BF;
+	align-items: center;
+}
+
+.banner-icons {
+	justify-content: flex-end;
+}
+
+.site-logo {
+	font-size: 1.25em;
+	font-weight: 400;
+	color: #fff;
+	padding-left: calc(2%);
+}
+
+.banner-icons li {
+	color: #fff;
+	font-size: 1.125em;
+	font-weight: 300;
+	padding-right: 10px;
+}
+
+.alerts {
+	padding-top: 5px;
+	width: 30px;
+}
+
+.profile-avatar img {
+	margin-top: 5px;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+}
+/* -- Navigation -- */
+.nav-bar {
+	width: calc(100%);
+}
+
+.nav-bar,
+.nav-icons {
+	display: flex;
+	flex-direction: column;
+	background-color: #4D4C72;
+}
+
+.nav-icons a {
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	border-bottom: 1px solid #fff;
+	opacity: .5;
+}
+
+.nav-icons a:hover {
+	opacity: 1;
+}
+
+.nav-bar img {
+	width: 25px;
+}
+
+/* -------------------------------
+	Media Queries
+--------------------------------- */
+
+@media (min-width: 769px) {
+	.nav-bar {
+		height: 50px;
+	}
+	.nav-icons {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.nav-icons a {
+		border: none;
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+}
+
+@media (min-width: 1025px) {
+	.container {
+		display: flex;
+	}
+	.nav-bar {
+		width: calc(7%);
+		height: calc(100%);
+	}
+	.nav-icons {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.nav-icons li {
+		margin: auto;
+	}
+	.banner {
+		border: none;
+	}
+	.alerts {
+		padding-top: 5px;
+		width: 30px;
+		border-right: 1px solid white;
+	}
+	.profile-avatar {
+		margin-left: 10px;
+	}
+}
+
+
+/* Main Content Styles */
