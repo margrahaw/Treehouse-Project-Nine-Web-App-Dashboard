@@ -7,11 +7,12 @@
 	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 	<title>Web App Dashboard</title>
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/scripts.js"></script>
 </head>
 <body>
 	<header>
 		<div class="banner">
-			<h1 class="site-logo">YourApp</h1>
+			<h1 class="site-logo">Your<span class="light">App</span><span class="trademark">&trade;</span></h1>
 			<ul class="banner-icons">
 				<li class="alerts"><img src="icons/icon-bell.svg" alt="alert bell"></li>
 				<li class="profile-avatar"><img src="icons/profile-picture.png" alt="profile avatar"></li>
@@ -30,26 +31,37 @@
 					<li><a href="#"><img src="icons/icon-settings.svg" alt="settings icon"></a></li>
 				</ul>
 			</div>
-			<div class="dashboard"></div>
+			<div class="widgetArea">
+				<div class="dashboard">
+					<div class="dashboard-container">
+						<h1>Dashboard</h1>
+					</div>
+					<div class="searchbox">
+						<input type="text" id="search" name="searchbox" placeholder="Search">
+					</div>
+				</div>
 
-			<div class="alert-banner"></div>
+				<div class="alert">
+					<p><strong>Alert!</strong> You have new notifications, please check your messages.</p>
+					<span class="closebtn">x</span>
+				</div>
 
-			<div class="traffic"></div>
+				<div class="traffic"></div>
 
-			<div class="dailyTraffic"></div>
+				<div class="dailyTraffic"></div>
 
-			<div class="mobileUsers"></div>
+				<div class="mobileUsers"></div>
 
-			<div class="socialStats"></div>
+				<div class="socialStats"></div>
 
-			<div class="newMembers"></div>
+				<div class="newMembers"></div>
 
-			<div class="recentActivity"></div>
+				<div class="recentActivity"></div>
 
-			<div class="messageUser"></div>
+				<div class="messageUser"></div>
 
-			<div class="settings"></div>
-
+				<div class="settings"></div>
+			</div>
 		</div>
 	</main>
 

@@ -39,9 +39,12 @@ ul {
 
 .site-logo {
 	font-size: 1.25em;
-	font-weight: 400;
+	font-weight: bold;
 	color: #fff;
 	padding-left: calc(2%);
+}
+.light {
+	font-weight: 400;
 }
 
 .banner-icons li {
@@ -65,6 +68,7 @@ ul {
 /* -- Navigation -- */
 .nav-bar {
 	width: calc(100%);
+	min-height: 1000px;
 }
 
 .nav-bar,
@@ -88,6 +92,62 @@ ul {
 
 .nav-bar img {
 	width: 25px;
+}
+
+/* -- Alert banner -- */
+.alert {
+	background-color: #4D4C72;
+	color: #fff;
+	width: 95%;
+	margin: 10px auto;
+	height: 40px;
+	border-radius: 5px;
+}
+.alert p {
+	margin-top: 12px;
+	padding-left: 10px;
+	float: left;
+	font-size: .85em;
+}
+.alert span {
+	float: right;
+	padding: 5px 10px 0 0;
+	font-weight: 700;
+}
+
+/* -- Widget Area -- */
+.widgetArea {
+	width: 100%;
+}
+
+.dashboard {
+	display: flex;
+	justify-content: space-between;
+	background-color: lightgrey;
+	width: 100%;
+}
+.dashboard-container {
+	width: 15%;
+	background-color: #fff;
+	border-right: 1px solid grey;
+}
+
+.dashboard h1 {
+	font-size: 1.25em;
+	font-weight: 400;
+	text-align: center;
+
+}
+.searchbox {
+	width: 85%;
+	border-bottom: 1px solid grey;
+}
+
+.searchbox input {
+	margin-left: 60%;
+	margin-top: 12.5px;
+	width: 30%;
+	height: 25px;
 }
 
 /* -------------------------------
