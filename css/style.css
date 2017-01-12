@@ -114,6 +114,12 @@ ul {
 	padding: 5px 10px 0 0;
 	font-weight: 700;
 }
+.alert span:hover {
+	cursor: pointer;
+}
+.hide {
+	display: none;
+}
 
 /* -- Widget Area -- */
 .widgetArea {
