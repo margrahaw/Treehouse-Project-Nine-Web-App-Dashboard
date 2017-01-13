@@ -68,7 +68,7 @@ ul {
 /* -- Navigation -- */
 .nav-bar {
 	width: calc(100%);
-	min-height: 1500px;
+	min-height: 2000px;
 }
 
 .nav-bar,
@@ -171,15 +171,52 @@ ul {
 .mobileUsers {
 	width: 45%;
 	float: right;
+	display: inline-block;
 }
 
 /* Social Stats */
+
 .socialStats {
+	width: 100%;
+}
+.social-container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.social-box {
+	width: 25%;
+	padding: 20px;
 	border: 1px solid #808080;
-	border-right: none;
-	width: 50%;
-	display: inline;
-	float: right;
+	border-radius: 5px;
+}
+.social-info {
+
+}
+.social-name {
+	color: #7477BF;
+	font-size: 1.5em;
+	font-weight: 200;
+}
+.social-count {
+	
+}
+.social-icon {
+	background-color: #7477BF;
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	position: relative;
+}
+.icon {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	fill: #fff;
 }
 /* New Members */
 .newMembers {
@@ -199,6 +236,11 @@ ul {
 /* Settings */
 .settings {
 
+}
+
+/* Clearfix */
+.clearfix {
+	overflow: auto;
 }
 
 /* -------------------------------

@@ -7,7 +7,6 @@ window.onload = function() {
 	var trafficChart = document.getElementById('trafficChart');
 	var dailyTrafficChart = document.getElementById("dailyTrafficChart");
 	var mobileUsersChart = document.getElementById('mobileUsersChart');
-	var socialStatsChart = document.getElementById('socialStatsChart');
 	var newMembersChart = document.getElementById('newMembersChart');
 	var recentActivityChart = document.getElementById('recentActivityChart');
 	var messageUsersChart = document.getElementById('messageUsersChart');
@@ -82,7 +81,11 @@ window.onload = function() {
         labels: ["Phones", "Tablets", "Desktop"],
         datasets: [{
             data: [30, 40, 150],
-            backgroundColor: 'rgba(116, 119, 191, 1)',
+            backgroundColor: [
+            	"#87CEEB",
+            	"#8FBC8F",
+            	"#7477BF"
+            ],
             borderWidth: 1
         }]
 	    },
@@ -96,15 +99,19 @@ window.onload = function() {
 	        },
 	        title: {
 	        	display: true,
-	        	text: 'Daily Traffic'
+	        	text: 'Mobile Users',
+	        	position: 'left'
 	        },
 	        legend: {
-	        	display: false
+	        	position: 'right',
+	        	labels: {
+	        		boxWidth: 15,
+	        		padding: 20,
+	        		fontStyle: "bold"
+	        	}
 	        }
 	    }
 	});
-
-	// Social Stats Chart
 
 	// New Members Chart
 
