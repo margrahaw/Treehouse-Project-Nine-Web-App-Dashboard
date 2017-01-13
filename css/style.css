@@ -68,7 +68,7 @@ ul {
 /* -- Navigation -- */
 .nav-bar {
 	width: calc(100%);
-	height: 1000px;
+	min-height: 1500px;
 }
 
 .nav-bar,
@@ -129,13 +129,13 @@ ul {
 .dashboard {
 	display: flex;
 	justify-content: space-between;
-	background-color: lightgrey;
+	background-color: #dcdcdc;
 	width: 100%;
 }
 .dashboard-container {
 	width: 15%;
 	background-color: #fff;
-	border-right: 1px solid grey;
+	border-right: 1px solid #808080;
 }
 
 .dashboard h1 {
@@ -146,7 +146,7 @@ ul {
 }
 .searchbox {
 	width: 85%;
-	border-bottom: 1px solid grey;
+	border-bottom: 1px solid #808080;
 }
 
 .searchbox input {
@@ -155,13 +155,50 @@ ul {
 	width: 30%;
 	height: 25px;
 }
+/* Traffic */
+.traffic {
+	padding: 5%;
+}
 
-/* Daily Traffic*/
+/* Daily Traffic */
 .dailyTraffic {
-	border: 1px solid grey;
-	padding: 2%;
+	border: 1px solid #808080;
+	border-left: none;
 	width: 50%;
 	float: left;
+}
+/* Mobile Users */
+.mobileUsers {
+	width: 45%;
+	float: right;
+}
+
+/* Social Stats */
+.socialStats {
+	border: 1px solid #808080;
+	border-right: none;
+	width: 50%;
+	display: inline;
+	float: right;
+}
+/* New Members */
+.newMembers {
+
+}
+
+/* Recent Activity */
+.recentActivity {
+
+}
+
+/* Message Users */
+.messageUser {
+
+}
+
+/* Settings */
+.settings {
+
 }
 
 /* -------------------------------
