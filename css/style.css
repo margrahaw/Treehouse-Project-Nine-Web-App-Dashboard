@@ -1,4 +1,4 @@
-/* Global Layout Set-Up */
+ Global Layout Set-Up */
 * {
 	box-sizing: border-box;
 }
@@ -68,7 +68,7 @@ ul {
 /* -- Navigation -- */
 .nav-bar {
 	width: calc(100%);
-	min-height: 1000px;
+	height: 1000px;
 }
 
 .nav-bar,
@@ -156,6 +156,14 @@ ul {
 	height: 25px;
 }
 
+/* Daily Traffic*/
+.dailyTraffic {
+	border: 1px solid grey;
+	padding: 2%;
+	width: 50%;
+	float: left;
+}
+
 /* -------------------------------
 	Media Queries
 --------------------------------- */
@@ -204,4 +212,4 @@ ul {
 }
 
 
-/* Main Content Styles */
+/* Main Content Styles 
