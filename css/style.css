@@ -179,6 +179,12 @@ ul {
 .socialStats {
 	width: 100%;
 }
+.socialStats p {
+	text-transform: uppercase;
+	margin-left: 1.5em;
+	font-size: .8em;
+	margin-top: 1.5em;
+}
 .social-container {
 	width: 100%;
 	display: flex;
@@ -193,15 +199,18 @@ ul {
 	border-radius: 5px;
 }
 .social-info {
-
+	position: absolute;
+	padding-left: 100px;
+	
 }
 .social-name {
 	color: #7477BF;
-	font-size: 1.5em;
-	font-weight: 200;
+	font-weight: bold;
+
 }
 .social-count {
-	
+	font-weight: light;
+	font-size: 2em;
 }
 .social-icon {
 	background-color: #7477BF;
@@ -209,6 +218,7 @@ ul {
 	width: 70px;
 	height: 70px;
 	position: relative;
+	float: left;
 }
 .icon {
 	width: 40px;

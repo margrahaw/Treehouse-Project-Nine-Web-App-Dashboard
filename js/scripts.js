@@ -7,7 +7,6 @@ window.onload = function() {
 	var trafficChart = document.getElementById('trafficChart');
 	var dailyTrafficChart = document.getElementById("dailyTrafficChart");
 	var mobileUsersChart = document.getElementById('mobileUsersChart');
-	var newMembersChart = document.getElementById('newMembersChart');
 	var recentActivityChart = document.getElementById('recentActivityChart');
 	var messageUsersChart = document.getElementById('messageUsersChart');
 	var settingsChart = document.getElementById('settingsChart');
@@ -113,7 +112,7 @@ window.onload = function() {
 	    }
 	});
 
-	// New Members Chart
+
 
 	// Recent Activity Chart
 
