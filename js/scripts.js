@@ -7,9 +7,6 @@ window.onload = function() {
 	var trafficChart = document.getElementById('trafficChart');
 	var dailyTrafficChart = document.getElementById("dailyTrafficChart");
 	var mobileUsersChart = document.getElementById('mobileUsersChart');
-	var recentActivityChart = document.getElementById('recentActivityChart');
-	var messageUsersChart = document.getElementById('messageUsersChart');
-	var settingsChart = document.getElementById('settingsChart');
 
 	//Add Event listener for alert
 	alertButton.addEventListener('click', () => {
@@ -112,12 +109,5 @@ window.onload = function() {
 	    }
 	});
 
-
-
-	// Recent Activity Chart
-
-	// Message Users Chart
-
-	// Settings Chart
 	
 }

@@ -5,6 +5,7 @@
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/css-toggle-switch/latest/toggle-switch.css" />
 	<title>Web App Dashboard</title>
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="js/scripts.js"></script>
@@ -119,19 +120,129 @@
 				</div>
 
 				<div class="newMembers">
-					<canvas id="newMembersChart" width="400" height="200"></canvas>
+					<h2>New Members</h2>
+					<ul class="members-list">
+						<li class="member">
+							<img src='icons/member_james.jpg' alt="profile picture of james">
+							<div class="member-info">
+								<span class="member-name">James Charlie</span><br>
+								<span class="member-email">jamesqcharlie@memberapp.com</span>
+							</div>
+							<span class="member-join">1/5/17</span>
+						</li>
+						<li class="member">
+							<img src='icons/member_megan.jpg' alt="profile picture of megan">
+							<div class="member-info">
+								<span class="member-name">Megan Post</span><br>
+								<span class="member-email">megankaepost@memberapp.com</span>
+							</div>
+							<span class="member-join">1/7/17</span>
+						</li>
+						<li class="member">
+							<img src='icons/member_piyush.jpg' alt="profile picture of piyush">
+							<div class="member-info">
+								<span class="member-name">Piyush Kale</span><br>
+								<span class="member-email">kaleisthefuture@memberapp.com</span>
+							</div>
+							<span class="member-join">1/4/17</span>
+						</li>
+						<li class="member">
+							<img src='icons/member_chris.jpg' alt="profile picture of chris">
+							<div class="member-info">
+								<span class="member-name">Chris Farley</span><br>
+								<span class="member-email">c.farley@memberapp.com</span>
+							</div>
+							<span class="member-join">1/12/17</span>
+						</li>					
+					</ul>
 				</div>
 
 				<div class="recentActivity">
-					<canvas id="recentActivityChart" width="400" height="200"></canvas>
+					<h2>Recent Activities</h2>
+					<ul class="recent-activities">
+						<li class="member">
+							<img src='icons/member_james.jpg' alt="profile picture of james">
+							<div class="member-info">
+								<span class="member-name">James Charlie</span><br>
+								<span class="member-email">jamesqcharlie@memberapp.com</span>
+							</div>
+							<span class="member-join">1/5/17</span>
+						</li>
+						<li class="member">
+							<img src='icons/member_megan.jpg' alt="profile picture of megan">
+							<div class="member-info">
+								<span class="member-name">Megan Post</span><br>
+								<span class="member-email">megankaepost@memberapp.com</span>
+							</div>
+							<span class="member-join">1/7/17</span>
+						</li>
+						<li class="member">
+							<img src='icons/member_piyush.jpg' alt="profile picture of piyush">
+							<div class="member-info">
+								<span class="member-name">Piyush Kale</span><br>
+								<span class="member-email">kaleisthefuture@memberapp.com</span>
+							</div>
+							<span class="member-join">1/4/17</span>
+						</li>
+						<li class="member">
+							<img src='icons/member_chris.jpg' alt="profile picture of chris">
+							<div class="member-info">
+								<span class="member-name">Chris Farley</span><br>
+								<span class="member-email">c.farley@memberapp.com</span>
+							</div>
+							<span class="member-join">1/12/17</span>
+						</li>					
+					</ul>
 				</div>
 
 				<div class="messageUser">
-					<canvas id="messageUsersChart" width="400" height="200"></canvas>
+					<div class="message-container">
+						<h2>Message user</h2>
+						<form id="message-form" method="post" action="index.html" name="message">
+							<input type="text" id="search-user" name="user-search" placeholder="search for user">
+							<label for="message-user"></label><br>
+							<textarea id="message-user" name="user-message">
+							</textarea><br>
+							<button>Send</button>
+						</form>
+					</div>
 				</div>
 
 				<div class="settings">
-					<canvas id="settingsChart" width="400" height="200"></canvas>
+					<div class="settings-container">
+						<h2>Settings</h2>
+
+						<form id="settings-form" method="post" action="index.html" name="settings-set">
+
+							<div class="flex-container">
+								<p>Send Email Notifications</p>
+                                <div class="switch">
+                                 	<input id="email-toggle" name="email-switch" class="toggle toggle-round" type="checkbox" value="">
+                                 	<label for="email-toggle" data-on="ON" data-off="OFF"></label>
+                                </div>
+                            </div>
+                            
+                            <div class="flex-container">
+                            	<p>Set Profile to Public</p>
+                                <div class="switch">
+                                 	<input id="profile-toggle" name="profile-switch" class="toggle toggle-round" type="checkbox" value="">
+                                 	<label for="profile-toggle" data-on="ON" data-off="OFF"></label>
+                                </div>
+                            </div><br>
+
+							<label for="time"></label>
+							<select id="time" name="time-zone">
+								<option value="etz">Eastern</option>
+								<option value="ctz">Central</option>
+								<option value="mtz">Mountain</option>
+								<option value="ptz">Pacific</option>
+								<option value="atz">Alaska</option>
+								<option value="htz">Hawaiian</option>
+							</select><br>
+							<button>Send</button>
+							<button>Cancel</button>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
