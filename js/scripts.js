@@ -21,7 +21,7 @@ window.onload = function() {
         datasets: [{
             data: [0, 700, 1000, 800, 1100, 900, 1500, 2000, 900, 2000, 1900, 2250],
             backgroundColor: 'rgba(116, 119, 191, 0.4)',
-            lineTension: 0,
+            tension: 0,
             pointBorderColor: 'rgba(116, 119, 191, 1)',
             pointBackgroundColor: "#fff",
             pointRadius: 5,
@@ -34,7 +34,10 @@ window.onload = function() {
 	                ticks: {
 	                    beginAtZero:true
 	                }
-	            }]
+	            }],
+	            gridLines: {
+	            	drawBorder: true
+	            }
 	        },
 	        layout: {
 	        	padding: 20

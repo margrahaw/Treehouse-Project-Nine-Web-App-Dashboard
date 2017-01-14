@@ -202,9 +202,9 @@
 					<div class="message-container">
 						<h2>Message user</h2>
 						<form id="message-form" method="post" action="index.html" name="message">
-							<input type="text" id="search-user" name="user-search" placeholder="search for user">
+							<input type="text" id="search-user" name="user-search" placeholder="search for user" class="message-form-box">
 							<label for="message-user"></label><br>
-							<textarea id="message-user" name="user-message">
+							<textarea id="message-user" name="user-message" class="message-form-box" placeholder="Message for user">
 							</textarea><br>
 							<button>Send</button>
 						</form>
@@ -231,7 +231,7 @@
                                  	<input id="profile-toggle" name="profile-switch" class="toggle toggle-round" type="checkbox" value="">
                                  	<label for="profile-toggle" data-on="ON" data-off="OFF"></label>
                                 </div>
-                            </div><br>
+                            </div>
 
 							<label for="time"></label>
 							<select id="time" name="time-zone">
@@ -242,8 +242,10 @@
 								<option value="atz">Alaska</option>
 								<option value="htz">Hawaiian</option>
 							</select><br>
-							<button>Send</button>
-							<button>Cancel</button>
+							<div class="btn-ctr">
+								<button id="sendbtn">Send</button>
+								<button id="cancelbtn">Cancel</button>
+							</div>
 						</form>
 					</div>
 				</div>
