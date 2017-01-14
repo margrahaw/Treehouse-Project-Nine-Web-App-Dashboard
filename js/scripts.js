@@ -19,9 +19,13 @@ window.onload = function() {
     data: {
         labels: ["16-22", "23-25", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
         datasets: [{
-            data: [0, 700, 1000, 800, 1100, 900, 1500, 2000, 900, 2000, 1900, 2100],
+            data: [0, 700, 1000, 800, 1100, 900, 1500, 2000, 900, 2000, 1900, 2250],
             backgroundColor: 'rgba(116, 119, 191, 0.4)',
-            borderWidth: 1
+            lineTension: 0,
+            pointBorderColor: 'rgba(116, 119, 191, 1)',
+            pointBackgroundColor: "#fff",
+            pointRadius: 5,
+            borderWidth: 2
         }]
 	    },
 	    options: {
@@ -32,9 +36,8 @@ window.onload = function() {
 	                }
 	            }]
 	        },
-	        title: {
-	        	display: true,
-	        	text: 'Traffic'
+	        layout: {
+	        	padding: 20
 	        },
 	        legend: {
 	        	display: false
@@ -59,11 +62,13 @@ window.onload = function() {
 	                ticks: {
 	                    beginAtZero:true
 	                }
-	            }]
+	            }],
+	            xAxes: [{
+	        		barThickness: 30
+	        	}]
 	        },
-	        title: {
-	        	display: true,
-	        	text: 'Daily Traffic'
+	        layout: {
+	        	padding: 20
 	        },
 	        legend: {
 	        	display: false
@@ -86,18 +91,9 @@ window.onload = function() {
         }]
 	    },
 	    options: {
-	        scales: {
-	            yAxes: [{
-	                ticks: {
-	                    beginAtZero:true
-	                }
-	            }]
-	        },
-	        title: {
-	        	display: true,
-	        	text: 'Mobile Users',
-	        	position: 'left'
-	        },
+	    	layout: {
+	    		padding: 40
+	    	},
 	        legend: {
 	        	position: 'right',
 	        	labels: {
