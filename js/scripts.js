@@ -95,14 +95,13 @@ window.onload = function() {
 	    },
 	    options: {
 	    	layout: {
-	    		padding: 40
+	    		padding: 30
 	    	},
 	        legend: {
 	        	position: 'right',
 	        	labels: {
 	        		boxWidth: 15,
-	        		padding: 20,
-	        		fontStyle: "bold"
+	        		padding: 20
 	        	}
 	        }
 	    }

@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 	<link href='http://fonts.googleapis.com/css?family=Fira+Sans' rel='stylesheet' type='text/css'>
@@ -15,7 +16,7 @@
 		<div class="banner">
 			<h1 class="site-logo">Your<span class="light">App</span><span class="trademark">&trade;</span></h1>
 			<ul class="banner-icons">
-				<li class="alerts"><img src="icons/icon-bell.svg" alt="alert bell"></li>
+				<li class="alert-bell"><img src="icons/icon-bell.svg" alt="alert bell"></li>
 				<li class="profile-avatar"><img src="icons/profile-picture.png" alt="profile avatar"></li>
 				<li>Mary Hawley</li>
 			</ul>
@@ -24,14 +25,12 @@
 
 	<main>
 		<div class="container">
-			<div class="nav-bar">
 				<ul class="nav-icons">
 					<li><a href="#"><img src="icons/icon-dashboard.svg" alt="dashboard icon"></a></li>
 					<li><a href="#"><img src="icons/icon-members.svg" alt="members icon"></a></li>
 					<li><a href="#"><img src="icons/icon-visits.svg" alt="visitor icon"></a></li>
 					<li><a href="#"><img src="icons/icon-settings.svg" alt="settings icon"></a></li>
 				</ul>
-			</div>
 			<div class="widgetArea">
 				<div class="dashboard">
 					<div class="dashboard-container">
@@ -51,10 +50,10 @@
 					<div class="traffic-banner">
 						<h2>Traffic</h2>
 						<ul class="traffic-nav">
-							<li><a href="#"> Hourly </a></li>
-							<li><a href="#"> Daily </a></li>
-							<li><a href="#"> Weekly </a></li>
-							<li><a href="#"> Monthly </a></li>
+							<li><a href="#">Hourly</a></li>
+							<li><a href="#">Daily</a></li>
+							<li><a href="index.html" class="selected">Weekly</a></li>
+							<li><a href="#">Monthly</a></li>
 						</ul>
 					</div>
 					<canvas id="trafficChart" width="400" height="200"></canvas>
@@ -210,9 +209,9 @@
 					<div class="message-container">
 						<h2>Message user</h2>
 						<form id="message-form" method="post" action="index.html" name="message">
-							<input type="text" id="search-user" name="user-search" placeholder="search for user" class="message-form-box">
+							<input type="text" id="search-user" name="user-search" placeholder="Search for User" class="message-form-box">
 							<label for="message-user"></label><br>
-							<textarea id="message-user" name="user-message" class="message-form-box" placeholder="Message for user">
+							<textarea id="message-user" name="user-message" class="message-form-box" placeholder="Message for User">
 							</textarea><br>
 							<button>Send</button>
 						</form>
@@ -243,6 +242,7 @@
 
 							<label for="time"></label>
 							<select id="time" name="time-zone">
+								<option value>Select Timezone</option>
 								<option value="etz">Eastern</option>
 								<option value="ctz">Central</option>
 								<option value="mtz">Mountain</option>
@@ -251,7 +251,7 @@
 								<option value="htz">Hawaiian</option>
 							</select><br>
 							<div class="btn-ctr">
-								<button id="sendbtn">Send</button>
+								<button id="sendbtn">Save</button>
 								<button id="cancelbtn">Cancel</button>
 							</div>
 						</form>
