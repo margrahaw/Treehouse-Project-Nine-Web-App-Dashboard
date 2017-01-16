@@ -333,31 +333,24 @@ ul {
 	margin-bottom: 20px;
 	border-radius: 5px;
 }
-#search-user {
+
+#search-user,
+#msg-user {
 	border: 1px solid #808080;
 	padding: 0 0 0 10px;
 	outline: none;
-	height: 30px;
 	width: 100%;
+	border-radius: 5px;
 	background-color: #f1f1f1;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-
 }
-input[text] {
-	padding: 15px;
+#search-user {
+	height: 30px;
 }
-
-input[placeholder] {
-	color: #808080;
-}
-
-#message-user {
-	border: 1px solid #808080;
-	outline: none;
+#msg-user {
 	height: 100px;
-	padding: 0;
-	background-color: #f1f1f1;
-	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+	padding-top: 5px;
+	margin-bottom: 20px;
 }
 .messageUser button {
 	width: 100%;
@@ -407,7 +400,7 @@ input[placeholder] {
 	justify-content: space-between;
 
 }
-#sendbtn, 
+#savebtn, 
 #cancelbtn {
 	width: calc(50% - 25px);
 	height: 40px;
@@ -417,11 +410,11 @@ input[placeholder] {
 	font-weight: bold;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
-#sendbtn:hover,
+#savebtn:hover,
 #cancelbtn:hover {
 	cursor: pointer;
 }
-#sendbtn {
+#savebtn {
 	background-color: #7477BF;
 	border: 1px solid #4D4C72;
 }
@@ -604,8 +597,8 @@ input.toggle-round:checked + label:after {
 	.searchbox input{
 		margin-left: calc(60% - 25px);
 	}
-	.alert
-	{
+	.alert {
+		font-size: 1.25em;
 		width: calc(100% - 50px);
 	}
 }
