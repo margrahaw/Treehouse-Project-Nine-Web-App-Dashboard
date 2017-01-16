@@ -586,7 +586,6 @@ input.toggle-round:checked + label:after {
 	}
 	#message-form,
 	#settings-form {
-		height: ;
 		width: calc(100% - 50px);
 	}
 

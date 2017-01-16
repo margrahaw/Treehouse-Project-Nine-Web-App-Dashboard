@@ -5,7 +5,11 @@ window.onload = function() {
 	var sendButton = document.getElementById("sendbtn");
 
 	//Placeholder text
-	var messageUser = document.getElementById("message-user");
+	var messageUser = document.getElementById("msg-user");
+	var searchUser = document.getElementById("search-user");
+
+	//Forms 
+	var submitMessage = document.getElementById('message-form');
 
 	//Charts
 	var trafficChart = document.getElementById('trafficChart');
@@ -15,20 +19,22 @@ window.onload = function() {
 	//Add Event listener for alert
 	alertButton.addEventListener('click', () => {
 		alertBanner.className = 'hide';
-	})
+	});
 
 	// Error message if user of message field is empty
 
 	sendButton.addEventListener('click', () => {
+
 		// if message or user field is empty
-		if(document.getElementById("search-user").value === " " || document.getElementById("msg-user").value === " ") {
+		if(searchUser.value === "" || messageUser.value === "") {
 			//alert message
 		alert("Please complete both fields before sending message.");
 		} else {
+			submitMessage.submit();
 			//confirm that message was sent
 			alert("Your message has been sent.");
 		}
-	})
+	});
 
 
 	// Traffic Chart
@@ -125,4 +131,4 @@ window.onload = function() {
 	    }
 	});
 	
-}
+};
