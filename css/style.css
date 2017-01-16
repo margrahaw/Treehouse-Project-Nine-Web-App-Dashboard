@@ -292,28 +292,30 @@ ul {
 	margin-left: 10px;
 	padding-bottom: 10px
 }
-.member img {
+.activity img {
 	margin-top: 10px;
 	height: 30px;
 	width: 30px;
 	border-radius: 50%;
-
 }
-.member {
+.icon-sm {
+	padding: 5px;
+	margin: 10px 0 0 10px;
+}
+.activity-info {
+	width: 70%;
+	margin: 10px 0 0 20px;
+}
+.activity {
 	display: flex;
 	flex-direction: row;
 }
-.member-info {
-	padding: 10px 0 0 20px;
-	width: 50%;
+.arrow:hover {
+	cursor: pointer;
+	background-color: #7477BF;
 }
-.member-join {
-	padding-top: 10px;
-	width: 30%;
-	text-align: right;
-	
-}
-.member-email {
+
+.activity-date {
 	font-size: .75em;
 }
 
@@ -627,7 +629,7 @@ input.toggle-round:checked + label:after {
 	.nav-icons {
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
+		justify-content: flex-start;
 		padding: 0;
 	}
 	.nav-icons a {
