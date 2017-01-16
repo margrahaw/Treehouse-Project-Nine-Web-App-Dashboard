@@ -17,13 +17,12 @@ window.onload = function() {
 	var mobileUsersChart = document.getElementById('mobileUsersChart');
 
 	//Add Event listener for alert
-	alertButton.addEventListener('click', () => {
+	alertButton.addEventListener('click', function() {
 		alertBanner.className = 'hide';
 	});
 
 	// Error message if user of message field is empty
-
-	sendButton.addEventListener('click', () => {
+	sendButton.addEventListener('click', function() {
 
 		// if message or user field is empty
 		if(searchUser.value === "" || messageUser.value === "") {
