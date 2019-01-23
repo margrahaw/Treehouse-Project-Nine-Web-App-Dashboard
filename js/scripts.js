@@ -1,20 +1,20 @@
 window.onload = function() {
 	//Buttons
-	var alertButton = document.getElementById("closebtn");
-	var alertBanner	= document.getElementById("alertbtn");
-	var sendButton = document.getElementById("sendbtn");
+	var alertButton = document.querySelector("#closebtn");
+	var alertBanner	= document.querySelector("#alertbtn");
+	var sendButton = document.querySelector("#sendbtn");
 
 	//Placeholder text
-	var messageUser = document.getElementById("msg-user");
-	var searchUser = document.getElementById("search-user");
+	var messageUser = document.querySelector("#msg-user");
+	var searchUser = document.querySelector("#search-user");
 
 	//Forms 
-	var submitMessage = document.getElementById('message-form');
+	var submitMessage = document.querySelector("#message-form");
 
 	//Charts
-	var trafficChart = document.getElementById('trafficChart');
-	var dailyTrafficChart = document.getElementById("dailyTrafficChart");
-	var mobileUsersChart = document.getElementById('mobileUsersChart');
+	var trafficChart = document.querySelector("#trafficChart");
+	var dailyTrafficChart = document.querySelector("#dailyTrafficChart");
+	var mobileUsersChart = document.querySelector("#mobileUsersChart");
 
 	//Add Event listener for alert
 	alertButton.addEventListener('click', function() {
