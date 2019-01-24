@@ -1,7 +1,7 @@
 /* Colors
 Primary Colors:
-purple: #7477BF;
-darkPurple: #4D4C72;
+coral: #ff7062;
+coral less saturated: #ffa299;
 
 Secondary Colors:
 white: #FFF;
@@ -44,7 +44,7 @@ ul {
 /* -- Header -- */
 .banner {
 	padding-top: 10px;
-	background-color: #7477BF;
+	background-color: #ff7062;
 }
 .banner-icons {
 	padding-bottom: 10px;
@@ -76,7 +76,7 @@ ul {
 /* -- Navigation -- */
 
 .nav-icons {
-	background-color: #4D4C72;
+	background-color: #ffa299;
 }
 .nav-icons a {
 	height: 50px;
@@ -95,7 +95,7 @@ ul {
 
 /* -- Alert banner -- */
 .alert {
-	background-color: #7477BF;
+	background-color: #ff7062;
 	color: #fff;
 	width: calc(100% - 20px);
 	margin: 10px auto;
@@ -103,7 +103,7 @@ ul {
 	border-radius: 5px;
 }
 .alert p {
-	margin-top: 8px;
+	margin-top: 10px;
 	padding-left: 10px;
 	float: left;
 	font-size: .75em;
@@ -133,7 +133,6 @@ ul {
 .dashboard-container {
 	width: 40%;
 	background-color: #fff;
-	border-right: 1px solid #808080;
 }
 .dashboard h1 {
 	font-size: 1.25em;
@@ -150,7 +149,6 @@ ul {
 	width: 40%;
 	height: 25px;
 	border-radius: 5px;
-	border: 1px solid #808080;
 	padding-left: 10px;
 }
 
@@ -223,7 +221,7 @@ ul {
 	padding-top: 10px;	
 }
 .social-name {
-	color: #7477BF;
+	color: #ff7062;
 	font-weight: bold;
 
 }
@@ -232,7 +230,7 @@ ul {
 	font-size: 2em;
 }
 .social-icon {
-	background-color: #7477BF;
+	background-color: #ff7062;
 	border-radius: 50%;
 	width: 70px;
 	height: 70px;
@@ -312,7 +310,7 @@ ul {
 }
 .arrow:hover {
 	cursor: pointer;
-	background-color: #7477BF;
+	background-color: #ff7062;
 }
 
 .activity-date {
@@ -355,12 +353,12 @@ ul {
 .messageUser button {
 	width: 100%;
 	height: 40px;
-	background-color: #7477BF;
+	background-color: #ff7062;
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: bold;
 	border-radius: 5px;
-	border: 1px solid #4D4C72;
+	border: 1px solid #ffa299;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 .messageUser button:hover {
@@ -415,12 +413,12 @@ ul {
 	cursor: pointer;
 }
 #savebtn {
-	background-color: #7477BF;
-	border: 1px solid #4D4C72;
+	background-color: #ff7062;
+	border: 1px solid #ffa299;
 }
 #cancelbtn {
 	background-color: #C0C0C0;
-	border: 1px solid #4D4C72;
+	border: 1px solid #ffa299;
 }
 
 
@@ -478,7 +476,7 @@ input.toggle-round + label:after {
 
 input.toggle-round:checked + label:before {
 	content: attr(data-on);
-	background-color: #7477BF;
+	background-color: #ff7062;
 	color: #fff;
 	padding-top: 8px;
 	padding-left: 20px;
