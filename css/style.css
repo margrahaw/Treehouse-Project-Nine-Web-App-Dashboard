@@ -142,7 +142,6 @@ ul {
 }
 .searchbox {
 	width: 85%;
-	border-bottom: 1px solid #808080;
 }
 .searchbox input {
 	margin-left: calc(60% - 10px);
@@ -294,7 +293,7 @@ ul {
 .activity img {
 	margin-top: 10px;
 	height: 30px;
-	width: 30px;
+	width: 25px;
 	border-radius: 50%;
 }
 .icon-sm {
@@ -309,9 +308,14 @@ ul {
 	display: flex;
 	flex-direction: row;
 }
+
+.arrow path {
+	fill: green;
+}
 .arrow:hover {
 	cursor: pointer;
-	background-color: #ff7062;
+	/* background-color: #ff7062;
+	opacity: 0.7 !important; */
 }
 
 .activity-date {
@@ -359,8 +363,7 @@ ul {
 	text-transform: uppercase;
 	font-weight: bold;
 	border-radius: 5px;
-	border: 1px solid #ffa299;
-	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+	border: 1px solid #ff7062;
 }
 .messageUser button:hover {
 	cursor: pointer;
@@ -407,7 +410,6 @@ ul {
 	border-radius: 5px;
 	text-transform: uppercase;
 	font-weight: bold;
-	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 #savebtn:hover,
 #cancelbtn:hover {
@@ -415,11 +417,11 @@ ul {
 }
 #savebtn {
 	background-color: #ff7062;
-	border: 1px solid #ffa299;
+	border: 1px solid #ff7062;
 }
 #cancelbtn {
-	background-color: #C0C0C0;
-	border: 1px solid #ffa299;
+	background-color: #DCDCDC;
+	border: 1px solid #DCDCDC;
 }
 
 
@@ -506,7 +508,7 @@ input.toggle-round:checked + label:after {
 	.nav-icons {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: space-around;
 		padding: 0 25px 0 25px;
 	}
 	.nav-icons a {
@@ -519,7 +521,7 @@ input.toggle-round:checked + label:after {
 		font-size: 1.25em;
 		font-weight: bold;
 		color: #fff;
-		padding-left: 25px;
+		padding: 10px 0;
 	}
 	.dailyTraffic {
 		border: 1px solid #808080;
