@@ -109,7 +109,7 @@ window.onload = function() {
         datasets: [{
             data: [30, 40, 150],
             backgroundColor: [
-            	"#87CEEB",
+            	"#7477bf",
             	"#8FBC8F",
             	"#ff7062"
             ],

@@ -10,6 +10,7 @@ silver: #DCDCDC;
 gray: #808080;
 darkgray: C0C0C0;
 gree: "#8FBC8F";
+purple: #7477bf;
 
 */
 
@@ -180,7 +181,7 @@ ul {
 .traffic a.selected,
 .traffic a:hover {
 	color: #fff;
-	background-color: #8FBC8F;
+	background-color: #7477bf;
 }
 
 /* Daily Traffic and Mobile Users */
@@ -461,7 +462,7 @@ input.toggle-round + label:before {
 	border-radius: 20px;
 	transition: background 0.4s;
 	color: #808080;
-	padding-top: 8px;
+	padding-top: 5px;
 	padding-left: 40px;
 }
 
@@ -478,7 +479,7 @@ input.toggle-round:checked + label:before {
 	content: attr(data-on);
 	background-color: #ff7062;
 	color: #fff;
-	padding-top: 8px;
+	padding-top: 5px;
 	padding-left: 20px;
 }
 
