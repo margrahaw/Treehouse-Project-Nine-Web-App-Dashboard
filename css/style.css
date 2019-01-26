@@ -1,7 +1,9 @@
 /* Colors
 Primary Colors:
-purple: #7477BF;
-darkPurple: #4D4C72;
+teal #008080
+teal RGB 0, 128, 128, 1
+teal RGB 0, 128, 128, 0.5
+dark teal #156A6A
 
 Secondary Colors:
 white: #FFF;
@@ -9,10 +11,9 @@ offwhite: #F8F8FF;
 silver: #DCDCDC;
 gray: #808080;
 darkgray: C0C0C0;
-gree: "#8FBC8F";
-
+redorange #FF5733
+orange #FFC300
 */
-
 
  /* Global Layout Set-Up */
 * {
@@ -30,11 +31,18 @@ h2 {
 	text-transform: uppercase;
 	padding: 2% 2% 2% 10px;
 }
-
 ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+}
+
+/* Rules for using icons as white on a dark background. */
+.material-icons { 
+	color: rgba(255, 255, 255, 1); 
+}
+.material-icons.md-light.md-inactive { 
+	color: rgba(255, 255, 255, 0.2); 
 }
 
 /* -------------------------------
@@ -44,7 +52,7 @@ ul {
 /* -- Header -- */
 .banner {
 	padding-top: 10px;
-	background-color: #7477BF;
+	background-color: #008080;
 }
 .banner-icons {
 	padding-bottom: 10px;
@@ -63,9 +71,7 @@ ul {
 	font-size: 1.125em;
 	font-weight: 300;
 	padding-right: 10px;
-
 }
-
 .profile-avatar img {
 	margin-top: 5px;
 	margin-left: 10px;
@@ -76,7 +82,7 @@ ul {
 /* -- Navigation -- */
 
 .nav-icons {
-	background-color: #4D4C72;
+	background-color: #156A6A;
 }
 .nav-icons a {
 	height: 50px;
@@ -95,7 +101,7 @@ ul {
 
 /* -- Alert banner -- */
 .alert {
-	background-color: #7477BF;
+	background-color: #FF5733;
 	color: #fff;
 	width: calc(100% - 20px);
 	margin: 10px auto;
@@ -103,7 +109,7 @@ ul {
 	border-radius: 5px;
 }
 .alert p {
-	margin-top: 8px;
+	margin-top: 10px;
 	padding-left: 10px;
 	float: left;
 	font-size: .75em;
@@ -133,7 +139,6 @@ ul {
 .dashboard-container {
 	width: 40%;
 	background-color: #fff;
-	border-right: 1px solid #808080;
 }
 .dashboard h1 {
 	font-size: 1.25em;
@@ -142,7 +147,7 @@ ul {
 }
 .searchbox {
 	width: 85%;
-	border-bottom: 1px solid #808080;
+	background-color: rgba(0, 128, 128, 0.2);
 }
 .searchbox input {
 	margin-left: calc(60% - 10px);
@@ -150,7 +155,6 @@ ul {
 	width: 40%;
 	height: 25px;
 	border-radius: 5px;
-	border: 1px solid #808080;
 	padding-left: 10px;
 }
 
@@ -163,7 +167,6 @@ ul {
 	flex-direction: row;
 	justify-content: space-between;
 }
-
 .traffic-nav {
 	display: flex;
 	flex-direction: row;
@@ -182,7 +185,7 @@ ul {
 .traffic a.selected,
 .traffic a:hover {
 	color: #fff;
-	background-color: #8FBC8F;
+	background-color: #FFC300;
 }
 
 /* Daily Traffic and Mobile Users */
@@ -203,7 +206,6 @@ ul {
 }
 
 /* Social Stats */
-
 .social-box {
 	width: 100%;
 	border: 1px solid #808080;
@@ -223,7 +225,7 @@ ul {
 	padding-top: 10px;	
 }
 .social-name {
-	color: #7477BF;
+	color: #008080;
 	font-weight: bold;
 
 }
@@ -232,7 +234,7 @@ ul {
 	font-size: 2em;
 }
 .social-icon {
-	background-color: #7477BF;
+	background-color: #008080;
 	border-radius: 50%;
 	width: 70px;
 	height: 70px;
@@ -253,7 +255,6 @@ ul {
 .members-list {
 	padding-bottom: 10px;
 }
-
 .newMembers li {
 	margin-left: 10px;
 	padding-bottom: 10px
@@ -287,7 +288,6 @@ ul {
 .recent-activities {
 	padding-bottom: 10px;
 }
-
 .recentActivity li {
 	margin-left: 10px;
 	padding-bottom: 10px
@@ -310,11 +310,17 @@ ul {
 	display: flex;
 	flex-direction: row;
 }
-.arrow:hover {
-	cursor: pointer;
-	background-color: #7477BF;
-}
+.activity-icon {
+	margin-top: 10px;
+	color: #808080;
+	font-weight: 800;
+	font-size: 48px;
 
+}
+.activity-icon:hover {
+	cursor: pointer;
+	color: #FF5733;
+}
 .activity-date {
 	font-size: .75em;
 }
@@ -333,7 +339,6 @@ ul {
 	margin-bottom: 20px;
 	border-radius: 5px;
 }
-
 #search-user,
 #msg-user {
 	border: 1px solid #808080;
@@ -355,13 +360,12 @@ ul {
 .messageUser button {
 	width: 100%;
 	height: 40px;
-	background-color: #7477BF;
+	background-color: #008080;
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: bold;
 	border-radius: 5px;
-	border: 1px solid #4D4C72;
-	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+	border: 1px solid #008080;
 }
 .messageUser button:hover {
 	cursor: pointer;
@@ -408,35 +412,30 @@ ul {
 	border-radius: 5px;
 	text-transform: uppercase;
 	font-weight: bold;
-	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 #savebtn:hover,
 #cancelbtn:hover {
 	cursor: pointer;
 }
 #savebtn {
-	background-color: #7477BF;
-	border: 1px solid #4D4C72;
+	background-color: #008080;
+	border: 1px solid #008080;
 }
 #cancelbtn {
-	background-color: #C0C0C0;
-	border: 1px solid #4D4C72;
+	background-color: #FF5733;
+	border: 1px solid #FF5733;
 }
-
-
 .toggle {
 	position: absolute;
 	margin-left: -9999px;
 	visibility: hidden;
 }
-
 .toggle + label {
 	display: block;
 	position: relative;
 	cursor: pointer;
 	outline: none;
 }
-
 input.toggle-round + label {
 	padding: 2px;
 	width: 90px;
@@ -445,7 +444,6 @@ input.toggle-round + label {
 	border-radius: 20px;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
-
 input.toggle-round + label:before,
 input.toggle-round + label:after {
 	display: block;
@@ -455,7 +453,6 @@ input.toggle-round + label:after {
 	bottom: 1px;
 	content: "";
 }
-
 input.toggle-round + label:before {
 	content: attr(data-off);
 	right: 1px;
@@ -463,10 +460,9 @@ input.toggle-round + label:before {
 	border-radius: 20px;
 	transition: background 0.4s;
 	color: #808080;
-	padding-top: 8px;
+	padding-top: 5px;
 	padding-left: 40px;
 }
-
 input.toggle-round + label:after {
 	width: 30px;
 	height: 30px;
@@ -475,21 +471,15 @@ input.toggle-round + label:after {
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 	transition: margin 0.4s;
 }
-
 input.toggle-round:checked + label:before {
 	content: attr(data-on);
-	background-color: #7477BF;
+	background-color: #008080;
 	color: #fff;
-	padding-top: 8px;
 	padding-left: 20px;
 }
-
 input.toggle-round:checked + label:after {
 	margin-left: 60px;
 }
-
-
-
 
 /* Clearfix */
 .clearfix {
@@ -507,7 +497,7 @@ input.toggle-round:checked + label:after {
 	.nav-icons {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: space-around;
 		padding: 0 25px 0 25px;
 	}
 	.nav-icons a {
@@ -520,7 +510,7 @@ input.toggle-round:checked + label:after {
 		font-size: 1.25em;
 		font-weight: bold;
 		color: #fff;
-		padding-left: 25px;
+		padding: 10px 0;
 	}
 	.dailyTraffic {
 		border: 1px solid #808080;
@@ -602,7 +592,6 @@ input.toggle-round:checked + label:after {
 	}
 }
 
-
 @media (min-width: 1024px) {
 	.container {
 		display: flex;
@@ -628,5 +617,4 @@ input.toggle-round:checked + label:after {
 		border: none;
 		margin: 12.5px 25px 12.5px 25px;
 	}
-
 }

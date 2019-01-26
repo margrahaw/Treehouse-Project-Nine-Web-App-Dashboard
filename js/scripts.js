@@ -1,20 +1,20 @@
 window.onload = function() {
 	//Buttons
-	var alertButton = document.getElementById("closebtn");
-	var alertBanner	= document.getElementById("alertbtn");
-	var sendButton = document.getElementById("sendbtn");
+	var alertButton = document.querySelector("#closebtn");
+	var alertBanner	= document.querySelector("#alertbtn");
+	var sendButton = document.querySelector("#sendbtn");
 
 	//Placeholder text
-	var messageUser = document.getElementById("msg-user");
-	var searchUser = document.getElementById("search-user");
+	var messageUser = document.querySelector("#msg-user");
+	var searchUser = document.querySelector("#search-user");
 
 	//Forms 
-	var submitMessage = document.getElementById('message-form');
+	var submitMessage = document.querySelector("#message-form");
 
 	//Charts
-	var trafficChart = document.getElementById('trafficChart');
-	var dailyTrafficChart = document.getElementById("dailyTrafficChart");
-	var mobileUsersChart = document.getElementById('mobileUsersChart');
+	var trafficChart = document.querySelector("#trafficChart");
+	var dailyTrafficChart = document.querySelector("#dailyTrafficChart");
+	var mobileUsersChart = document.querySelector("#mobileUsersChart");
 
 	//Add Event listener for alert
 	alertButton.addEventListener('click', function() {
@@ -35,7 +35,6 @@ window.onload = function() {
 		}
 	});
 
-
 	// Traffic Chart
 	var trafficCt = new Chart(trafficChart, {
     type: 'line',
@@ -43,9 +42,9 @@ window.onload = function() {
         labels: ["16-22", "23-25", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
         datasets: [{
             data: [0, 700, 1000, 800, 1100, 900, 1500, 2000, 900, 2000, 1900, 2250],
-            backgroundColor: 'rgba(116, 119, 191, 0.4)',
+            backgroundColor: 'rgba(0, 128, 128, 0.4)',
             tension: 0,
-            pointBorderColor: 'rgba(116, 119, 191, 1)',
+            pointBorderColor: 'rgba(0, 128, 128, 1)',
             pointBackgroundColor: "#fff",
             pointRadius: 5,
             borderWidth: 2
@@ -78,7 +77,7 @@ window.onload = function() {
         labels: ["S", "M", "T", "W", "T", "F", "S"],
         datasets: [{
             data: [75, 100, 275, 125, 225, 200, 100],
-            backgroundColor: 'rgba(116, 119, 191, 1)',
+            backgroundColor: 'rgba(0, 128, 128, 1)',
             borderWidth: 1
         }]
 	    },
@@ -109,9 +108,9 @@ window.onload = function() {
         datasets: [{
             data: [30, 40, 150],
             backgroundColor: [
-            	"#87CEEB",
-            	"#8FBC8F",
-            	"#7477BF"
+            	"#FFC300",
+            	"#FF5733",
+            	"#008080"
             ],
             borderWidth: 1
         }]
