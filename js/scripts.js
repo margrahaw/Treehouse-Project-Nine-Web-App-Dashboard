@@ -43,9 +43,9 @@ window.onload = function() {
         labels: ["16-22", "23-25", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
         datasets: [{
             data: [0, 700, 1000, 800, 1100, 900, 1500, 2000, 900, 2000, 1900, 2250],
-            backgroundColor: 'rgba(255, 112, 98, 0.4)',
+            backgroundColor: 'rgba(0, 128, 128, 0.4)',
             tension: 0,
-            pointBorderColor: 'rgba(255, 112, 98, 1)',
+            pointBorderColor: 'rgba(0, 128, 128, 1)',
             pointBackgroundColor: "#fff",
             pointRadius: 5,
             borderWidth: 2
@@ -78,7 +78,7 @@ window.onload = function() {
         labels: ["S", "M", "T", "W", "T", "F", "S"],
         datasets: [{
             data: [75, 100, 275, 125, 225, 200, 100],
-            backgroundColor: 'rgba(255, 112, 98, 1)',
+            backgroundColor: 'rgba(0, 128, 128, 1)',
             borderWidth: 1
         }]
 	    },
@@ -109,9 +109,9 @@ window.onload = function() {
         datasets: [{
             data: [30, 40, 150],
             backgroundColor: [
-            	"#7477bf",
-            	"#8FBC8F",
-            	"#ff7062"
+            	"#FFC300",
+            	"#FF5733",
+            	"#008080"
             ],
             borderWidth: 1
         }]
