@@ -35,7 +35,6 @@ window.onload = function() {
 		}
 	});
 
-
 	// Traffic Chart
 	var trafficCt = new Chart(trafficChart, {
     type: 'line',
